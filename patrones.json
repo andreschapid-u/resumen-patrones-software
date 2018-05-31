@@ -107,8 +107,8 @@
     {
         "nombre": "Decorator",
         "tipo": "Estructural",
-        "logo": "img/patrones/adapter_logo.svg",
-        "portafolio": "img/patrones/adapter.svg",
+        "logo": "img/patrones/decorator_logo.svg",
+        "portafolio": "img/patrones/decorator.svg",
         "resumen": " Permite al usuario añadir nuevas funcionalidades a un objeto existente sin alterar su estructura, mediante la adición de nuevas clases que envuelven a la anterior dándole funcionamiento extra. Este patrón está diseñado para solucionar problemas donde la jerarquía con subclasificación no puede ser aplicada",
         "participantes": [
             "El <strong>Cliente</strong> realiza una operación sobre el <strong>DecoratorA</strong>.",
