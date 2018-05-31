@@ -3,7 +3,8 @@ $(window).on('load', function () {
   $(".loader").fadeOut("slow");
 });
 let data;
-$.getJSON("/patrones.json", function (result, status, xhr) {
+// $.getJSON("/patrones.json", function (result, status, xhr) {
+$.getJSON("https://raw.githubusercontent.com/andreschapid-u/resumen-patrones-software/gh-pages/patrones.json", function (result, status, xhr) {
   console.log(status);
 
   if (status == "success") {
