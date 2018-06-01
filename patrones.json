@@ -5,6 +5,8 @@
         "tipo": "Creacional",
         "logo": "img/patrones/singleton_logo.svg",
         "portafolio": "img/patrones/singleton.svg",
+        "diagrama_c": "img/patrones/singleton_d_c.svg",
+        "diagrama_s": "img/patrones/singleton_d_s.svg",
         "resumen": "Recibe su nombre debido a que sólo se puede tener una única instancia para toda la aplicación de una determinada clase, esto se logra restringiendo la libre creación de instancias de esta clase mediante el operador new e imponiendo un constructor privado y un método estático para poder obtener la instancia.",
         "participantes": [
             "El cliente solicita la instancia al Singleton mediante el método estático <strong>getInstance</strong>.",
@@ -17,6 +19,8 @@
         "tipo": "Creacional",
         "logo": "img/patrones/factory_logo.svg",
         "portafolio": "img/patrones/factory.svg",
+        "diagrama_c": "img/patrones/factory_d_c.svg",
+        "diagrama_s": "img/patrones/factory_d_s.svg",
         "resumen": "<strong>Factory Method</strong> permite la creación de objetos de un subtipo determinado a través de una clase <strong>Factory</strong>. Esto es especialmente útil cuando no sabemos, en tiempo de diseño, el subtipo que vamos a utilizar o cuando queremos delegar la lógica de creación de los objetos a una clase <strong>Factory</strong>.",
         "participantes": [
             "El cliente le solicita al <strong>ConcreteFactory</strong> la creación del <strong>ProductA</strong>.",
@@ -32,6 +36,8 @@
         "tipo": "Creacional",
         "logo": "img/patrones/abstract_factory_logo.svg",
         "portafolio": "img/patrones/abstract_factory.svg",
+        "diagrama_c": "img/patrones/abstract_factory_d_c.svg",
+        "diagrama_s": "img/patrones/abstract_factory_d_s.svg",
         "resumen": "Agrupar un conjunto de clases que tiene un funcionamiento en común llamadas familias, las cuales son creadas mediante un <strong>Factory</strong>, este patrón es especialmente útil cuando requerimos tener ciertas familias de clases para resolver un problema, sin embargo, puede que se requieran crear implementaciones paralelas de estas clases para resolver el mismo problema pero con una implementación distinta.",
         "participantes": [
             "El cliente solicita la creación del <strong>ConcreteFactory1</strong> al <strong>AbstractFactory</strong>.",
@@ -50,6 +56,8 @@
         "tipo": "Creacional",
         "logo": "img/patrones/builder_logo.svg",
         "portafolio": "img/patrones/builder.svg",
+        "diagrama_c": "img/patrones/builder_d_c.svg",
+        "diagrama_s": "img/patrones/builder_d_s.svg",
         "resumen": "Permite crear objetos complejos a través de uno más simple, el cual, mediante métodos de utilidad, va creando secciones de un objeto más grande, de tal forma que olvidamos de la complejidad de la estructura interna de los objetos.",
         "participantes": [
             "El cliente crea una instancia del <strong>ObjectBuilder</strong>.",
@@ -67,6 +75,8 @@
         "tipo": "Creacional",
         "logo": "img/patrones/prototype_logo.svg",
         "portafolio": "img/patrones/prototype.svg",
+        "diagrama_c": "img/patrones/prototype_d_c.svg",
+        "diagrama_s": "img/patrones/prototype_d_s.svg",
         "resumen": "Basa su funcionalidad en la clonación de objetos, estos nuevos objetos son creados mediante un pool de prototipos elaborados previamente y almacenados. Este patrón es especialmente útil cuando necesitamos crear objetos basados en otros ya existentes o cuando se necesita la creación de estructuras de objetos muy grandes.",
         "participantes": [
             "El <strong>Cliente</strong> solicita la clonación de <strong>Prototype</strong> mediante el método clone.",
@@ -81,6 +91,8 @@
         "tipo": "Estructural",
         "logo": "img/patrones/adapter_logo.svg",
         "portafolio": "img/patrones/adapter.svg",
+        "diagrama_c": "img/patrones/adapter_d_c.svg",
+        "diagrama_s": "img/patrones/adapter_d_s.svg",
         "resumen": "Es utilizado cuando tenemos interfaces de software incompatibles, las cuales a pesar de su incompatibilidad tiene una funcionalidad similar. Este patrón es implementado cuando se desea homogeneizar la forma de trabajar con estas interfaces incompatibles, para lo cual se crea una clase intermedia que funciona como un adaptador.",
         "participantes": [
             "El Client invoca al Adapter con parámetros genéricos.",
@@ -96,6 +108,8 @@
         "tipo": "Estructural",
         "logo": "img/patrones/bridge_logo.svg",
         "portafolio": "img/patrones/bridge.svg",
+        "diagrama_c": "img/patrones/bridge_d_c.svg",
+        "diagrama_s": "img/patrones/bridge_d_s.svg",
         "resumen": "Desacopla una abstracción de su implementación, de manera que las dos puedan ser modificadas por separado sin necesidad de modificar la otra; dicho de otra manera, se desacopla una abstracción de su implementación para que puedan variar independientemente.",
         "participantes": [
             "El cliente ejecuta una operación de <strong>AbstraccionImpl</strong>.",
@@ -109,6 +123,8 @@
         "tipo": "Estructural",
         "logo": "img/patrones/decorator_logo.svg",
         "portafolio": "img/patrones/decorator.svg",
+        "diagrama_c": "img/patrones/decorator_d_c.svg",
+        "diagrama_s": "img/patrones/decorator_d_s.svg",
         "resumen": " Permite al usuario añadir nuevas funcionalidades a un objeto existente sin alterar su estructura, mediante la adición de nuevas clases que envuelven a la anterior dándole funcionamiento extra. Este patrón está diseñado para solucionar problemas donde la jerarquía con subclasificación no puede ser aplicada",
         "participantes": [
             "El <strong>Cliente</strong> realiza una operación sobre el <strong>DecoratorA</strong>.",

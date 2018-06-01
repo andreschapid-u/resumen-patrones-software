@@ -1,10 +1,14 @@
 // const data = $.load("./patrones.json");
-$(window).on('load', function () {
-  $(".loader").fadeOut("slow");
-});
+// $(window).on('load', function () {
+//   // $(".loader").fadeOut("slow");
+// });
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(reg => console.log('Registro de SW exitoso', reg))
+    .catch(err => console.warn('Error al tratar de registrar el sw', err))
+}
 let data;
-// $.getJSON("/patrones.json", function (result, status, xhr) {
-$.getJSON("https://raw.githubusercontent.com/andreschapid-u/resumen-patrones-software/gh-pages/patrones.json", function (result, status, xhr) {
+$.getJSON("/patrones.json", function (result, status, xhr) {
   console.log(status);
 
   if (status == "success") {
@@ -24,6 +28,10 @@ function cargarDatos(data) {
     let contenerdor = document.getElementById("patrones");
     crearCard(contenerdor, data[i], i);
   }
+  setTimeout(function () {
+    $(".loader").fadeOut("slow");
+  }, 1000);
+
 }
 
 function crearCard(contenerdor, patron, i) {
@@ -63,8 +71,8 @@ function verPatron(pos) {
   document.getElementById("nombre").innerHTML = data[pos].nombre;
   document.getElementById("participantes").innerHTML = "";
   document.getElementById("logo").src = data[pos].logo;
-  document.getElementById("diagrama_c").src = data[pos].portafolio;
-  document.getElementById("diagrama_s").src = data[pos].logo;
+  document.getElementById("diagrama_c").src = data[pos].diagrama_c;
+  document.getElementById("diagrama_s").src = data[pos].diagrama_s;
   for (let i = 0; i < participantes.length; i++) {
     const liP = document.createElement("li");
     // liP.classList.add("fa", "fa-1x", "fa-star")
