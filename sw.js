@@ -3,7 +3,6 @@
 const CACHE_NAME = 'v1_cache_patrones_software_2',
   urlsToCache = [
     './',
-    './patrones.json',
     'https://raw.githubusercontent.com/andreschapid-u/resumen-patrones-software/gh-pages/patrones.json',
     './manifest.json',
     './css/font-awesome/css/font-awesome.min.css',
