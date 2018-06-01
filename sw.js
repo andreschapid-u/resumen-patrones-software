@@ -1,6 +1,6 @@
 ;
 //asignar un nombre y versión al cache
-const CACHE_NAME = 'v1_cache_patrones_software_2',
+const CACHE_NAME = 'v2_cache_patrones_software_2',
   urlsToCache = [
     './',
     'https://raw.githubusercontent.com/andreschapid-u/resumen-patrones-software/gh-pages/patrones.json',
