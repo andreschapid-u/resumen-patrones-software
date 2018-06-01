@@ -3,8 +3,6 @@
 const CACHE_NAME = 'v2_cache_patrones_software_2',
   urlsToCache = [
     './',
-    'https://raw.githubusercontent.com/andreschapid-u/resumen-patrones-software/gh-pages/patrones.json',
-    './manifest.json',
     './css/font-awesome/css/font-awesome.min.css',
     'http://localhost:8000/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0',
     'http://localhost:8000/css/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0',
