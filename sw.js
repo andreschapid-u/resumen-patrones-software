@@ -3,9 +3,11 @@
 const CACHE_NAME = 'v2_cache_patrones_software_2',
   urlsToCache = [
     './',
+    'https://raw.githubusercontent.com/andreschapid-u/resumen-patrones-software/gh-pages/patrones.json',
+    './manifest.json',
     './css/font-awesome/css/font-awesome.min.css',
-    'http://localhost:8000/css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0',
-    'http://localhost:8000/css/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0',
+    'http://localhost:8000/css/font-awesome/fonts/fontawesome-webfont.woff2',
+    'http://localhost:8000/css/font-awesome/fonts/fontawesome-webfont.woff',
     'http://localhost:8000/css/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0',
     'https://fonts.googleapis.com/css?family=Montserrat:400,700',
     'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic',
