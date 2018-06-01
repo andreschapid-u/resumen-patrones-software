@@ -8,7 +8,10 @@ if ('serviceWorker' in navigator) {
     .catch(err => console.warn('Error al tratar de registrar el sw', err))
 }
 let data;
-$.getJSON("/patrones.json", function (result, status, xhr) {
+// para local
+// $.getJSON("/patrones.json", function (result, status, xhr) { 
+// para git
+$.getJSON("https://raw.githubusercontent.com/andreschapid-u/resumen-patrones-software/gh-pages/patrones.json", function (result, status, xhr) {
   console.log(status);
 
   if (status == "success") {
